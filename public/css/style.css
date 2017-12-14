@@ -98,7 +98,7 @@ footer {
 }
 
 .subscribe_panel input {
-  border-radius: 20px;
+  border-radius: 40px;
   border:2px solid #dddddd;
   text-align: center;
   font-size: 22px;
@@ -292,12 +292,18 @@ footer {
 
 .teams_container .team_item {
   width:25%;
-  padding: 30px;
+  padding: 5%;
   box-sizing: border-box;
 }
 
 .teams_container .team_item img {
   width:100%;
+  transition: all 500ms ease-in-out;
+}
+
+.teams_container .team_item img:hover {
+  position: relative;
+  top:5px;
 }
 
 .team_data_wrapper {
@@ -310,6 +316,7 @@ footer {
 }
 
 .team_data_wrapper .right {
+  text-align: justify;
   flex-grow: 1;
   box-sizing: border-box;
   border-left: 1px solid #b9b9b9;
@@ -318,6 +325,11 @@ footer {
 
 .team_data_wrapper .left img {
   width: 150px;
+  transition: all 500ms ease-in-out;
+}
+
+.team_data_wrapper .left img:hover {
+  transform: rotateY(180deg);
 }
 
 .team_data_wrapper h1 {
@@ -338,6 +350,10 @@ footer {
   box-sizing: border-box;
 }
 
+.team_data_wrapper .squad .item_player_wrapper:hover {
+  cursor: pointer;
+}
+
 .team_data_wrapper .squad .item_player_wrapper h4 {
   text-align: center;
   color:#006bb6;
@@ -355,6 +371,7 @@ footer {
   font-size: 14px;
   padding: 4px 0;
 }
+
 
 .team_data_wrapper .squad .item_player_wrapper .node span {
   font-weight: 600;

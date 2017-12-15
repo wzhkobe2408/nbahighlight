@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 const URL_POLL = "http://localhost:3004/teams"
 
+
 class Poll extends Component {
   constructor(props) {
     super(props);
@@ -46,6 +47,7 @@ class Poll extends Component {
           <img alt={item.name} src={`/images/teams/${item.logo}`} />
           <h4>{position[index]}</h4>
           <div>{item.count} Votes</div>
+		  
         </div>
       )
     })

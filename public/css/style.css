@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'Roboto';
   color:#1b1b1b;
+  margin-top:43px;
 }
 
 .flexbox-container {
@@ -29,6 +30,11 @@ h4 {
 }
 
 header {
+  position:fixed;
+  box-sizing:border-box;
+  z-index:1000;
+  width:100%;
+  top:0;
   border-bottom: 1px solid #e2e2e2;
 }
 
@@ -376,3 +382,26 @@ footer {
 .team_data_wrapper .squad .item_player_wrapper .node span {
   font-weight: 600;
 }
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+
